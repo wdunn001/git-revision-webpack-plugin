@@ -122,8 +122,8 @@ var gitRevisionPlugin = new GitRevisionPlugin()
 module.exports = {
   plugins: [
     new DefinePlugin({
-      'VERSION': JSON.stringify(gitRevisionPlugin.version()),
-      'COMMITHASH': JSON.stringify(gitRevisionPlugin.commithash()),
+      'VERSION': JSON.stringify(GitRevisionPlugin.version()),
+      'COMMITHASH': JSON.stringify(GitRevisionPlugin.commithash()),
     })
   ]
 }
